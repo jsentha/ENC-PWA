@@ -31,7 +31,7 @@ import Details from './Details.vue';
         films = [];
         genres= [];
         uneRecherche = '';
-        api_key = '7fccf686b208400fb268558fc6207ce5';
+        api_key = '46b0fe273bb6da1ca836c5146d92969f';
 
         async recherche() {
             const response = await axios.get(this.baseUrl + '?api_key=' + this.api_key + '&query=' + this.uneRecherche);
