@@ -7,6 +7,8 @@
             <md-card class="details-card">
                 <h3>{{film.titre}}</h3>
                 <h3>{{film.id}}</h3>
+              {{"release date "+detailFilm.release_date}}
+
 
             </md-card>
             <md-table>
@@ -14,6 +16,7 @@
                 <md-table-cell>{{unGenre.name}}</md-table-cell>
             </md-table-row>
             </md-table>
+                    
             <md-card-media alt="image de devant" >
                 <img v-bind:src="'http://image.tmdb.org/t/p/w500/' +detailFilm.poster_path" width='100px' alt="Pas beau" >
             </md-card-media>
