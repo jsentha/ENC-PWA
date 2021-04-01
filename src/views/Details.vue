@@ -21,15 +21,19 @@
                 <img v-bind:src="'http://image.tmdb.org/t/p/w500/' +detailFilm.poster_path" width='100px' alt="Pas beau" >
             </md-card-media>
             <md-card-media alt="image de derrière">
-                <img  v-bind:src="'http://image.tmdb.org/t/p/w500/' +detailFilm.backdrop_path" width='100px'  alt="Pas beau">
+              <img  v-bind:src="'http://image.tmdb.org/t/p/w500/' +detailFilm.backdrop_path" width='100px'  alt="Pas beau">
             </md-card-media>
                 </md-step>
                 <md-step id="second" md-label="Suite">
                     <md-card class="details-card">
                         {{ detailFilm.overview}}
-
                     </md-card>
                 </md-step>
+
+
+          <md-step id="third" md-label="cast">
+
+          </md-step>
             </md-steppers>
         </div>
 
