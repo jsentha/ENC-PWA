@@ -26,14 +26,18 @@
                 </md-step>
                 <md-step id="second" md-label="Suite">
                     <md-card class="details-card">
-                        {{ detailFilm.overview}}
+                      {{ detailFilm.overview}}
                     </md-card>
                 </md-step>
 
 
           <md-step id="third" md-label="cast">
+            <md-card class="details-card">
+              {{castFilm.cast}}
 
+            </md-card>
           </md-step>
+
             </md-steppers>
         </div>
 
@@ -54,6 +58,8 @@
         detailFilm= null ;
         estPres=false ;
         compagnies = [] ;
+        castFilm=[];
+
 
         created() {
             this.film = {
@@ -69,11 +75,17 @@
 
         async cherchedetail() {
             //const response = await axios.get(this.baseUrl + `/search.json?title=${this.query}`);
+
+            // Demande d'informations rêquete Api
             const response = await axios.get(this.baseUrl + this.film.id + '?api_key='+this.api_key);
             this.genres = await response.data.genres;
             this.detailFilm = await response.data ;
             console.log(this.detailFilm) ;
             this.estPres = true ;
+
+            // Pour le Cast
+            const cast = await axios.get(this.baseUrl + this.film.id + '/credits?api_key=' + this.api_key);
+            this.castFilm = await cast.data;
         }
 
     }
