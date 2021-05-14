@@ -10,9 +10,6 @@
       </div>
     </form>
     <h2>Résultats de la recherche</h2>
-    <md-card-media alt="image de devant" >
-      <img src="./photo.jpg" width='100px' alt="Pas beau" class="photo1">
-    </md-card-media>
     <md-table>
       <md-table-row v-for="unFilm in films" v-bind:key="unFilm.key">
         <md-table-cell>{{unFilm.title}}</md-table-cell>

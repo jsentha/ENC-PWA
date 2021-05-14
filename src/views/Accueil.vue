@@ -7,12 +7,6 @@
 
 <style>
 
-    body{
-      background-image: url("./photo.jpg");
-      background-position: center;
-       max-height: 100%;
-       max-width: 100%;
-    }
 
 
 </style>

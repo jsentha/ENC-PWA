@@ -10,9 +10,6 @@
       </div>
     </form>
     <h2>Résultats de la recherche</h2>
-    <md-card-media alt="image de devant" >
-      <img src="./photo.jpg" width='100px' alt="Pas beau" class="photo1">
-    </md-card-media>
     <md-table>
       <md-table-row v-for="unFilm in films" v-bind:key="unFilm.key">
         <md-table-cell>{{unFilm.title}}</md-table-cell>
@@ -33,10 +30,10 @@ export default class Recherche extends Vue {
   baseUrl = 'https://api.themoviedb.org/3/search/movie';
   films = [];
   uneRecherche = '';
-  api_key =  '4ff72c4b1b8d4ccf3356dd8ef034a6ce';
+  api_key = '4ff72c4b1b8d4ccf3356dd8ef034a6ce';
 
   async recherche() {
     //const response = await axios.get(this.baseUrl + `/search.json?title=${this.query}`);
-    const response = await axios.get(this.baseUrl +'?api_key='+this.api_key+'&query=' + this.uneRecherche);
+    const response = await axios.get(this.baseUrl + '?api_key=' + this.api_key + '&query=' + this.uneRecherche);
     this.films = await response.data.results;
-  }
+  }}
