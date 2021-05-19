@@ -38,6 +38,7 @@
       this.films = await response.data.results;
     }
 
+
     voirDetails(film: any) {
       this.$router.push({ path: 'details', query: {
           id: film.id,

@@ -9,7 +9,8 @@
         <md-menu-content>
           <md-menu-item><router-link to="/">Accueil</router-link></md-menu-item>
           <md-menu-item><router-link to="/recherche">Recherche</router-link></md-menu-item>
-          <md-menu-item><router-link to="/recherche">Recherche Genre</router-link></md-menu-item>
+          <md-menu-item><router-link to="/filmpopulaire">FilmPopulaire</router-link></md-menu-item>
+
         </md-menu-content>
       </md-menu>
     </md-toolbar>

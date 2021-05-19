@@ -34,7 +34,6 @@
           <md-step id="third" md-label="cast">
             <md-card class="details-card">
               {{castFilm.cast}}
-
             </md-card>
           </md-step>
 

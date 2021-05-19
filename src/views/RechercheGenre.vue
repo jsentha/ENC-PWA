@@ -1,6 +1,6 @@
 <template>
-  <div class="recherche">
-    <form v-on:submit.prevent="recherche()">
+  <div class="rechercheGenre">
+    <form v-on:submit.prevent="rechercheGenre()">
       <div class="input-group">
         <md-field class="input-group-field">
           <label>Recherche</label>

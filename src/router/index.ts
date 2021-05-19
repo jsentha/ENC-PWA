@@ -4,6 +4,7 @@ import Accueil from '../views/Accueil.vue'
 import Recherche from "../views/Recherche.vue";
 import HelloWorld from "@/components/HelloWorld.vue";
 import RechercheGenre from "../views/RechercheGenre.vue";
+import FilmPopulaire from "../views/FilmPopulaire.vue";
 
 Vue.use(Router);
 
@@ -29,6 +30,11 @@ const router = new Router({
       path: '/rechercheGenre',
       name: 'rechercheGenre',
       component: RechercheGenre
+    },
+    {
+      path: '/filmpopulaire',
+      name: 'filmpopulaire',
+      component: FilmPopulaire
     },
     {
       path: '/details',
